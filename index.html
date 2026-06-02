@@ -704,7 +704,7 @@ textarea,input{font-family:var(--font);}
 
 <script>
 // ══ CONFIG — paste Apps Script URL trước khi deploy ══
-const _URL = 'https://script.google.com/macros/s/AKfycbzQ4pA7Tq0XsbRmQA0wBkySSfJfogvQxYj_xqHcfpPdfSw1yG04_t8zmB6qO1TkcGXT_g/exec';
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzQ4pA7Tq0XsbRmQA0wBkySSfJfogvQxYj_xqHcfpPdfSw1yG04_t8zmB6qO1TkcGXT_g/exec';
 
 const A = {}, M = {};
 let cur = 's-w', br = null;
@@ -911,7 +911,7 @@ function hideErr(k) { const e = document.getElementById('e-' + k); if (e) e.clas
 function gv(id) { return document.getElementById(id)?.value?.trim() || ''; }
 
 function sendData() {
-  if (!SHEET_URL || SHEET_URL === 'https://script.google.com/macros/s/AKfycbzQ4pA7Tq0XsbRmQA0wBkySSfJfogvQxYj_xqHcfpPdfSw1yG04_t8zmB6qO1TkcGXT_g/exec') return;
+  if (!SHEET_URL) return;
   const ts = new Date().toLocaleString('vi-VN');
   let payload;
 
