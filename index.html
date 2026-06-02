@@ -911,7 +911,7 @@ function hideErr(k) { const e = document.getElementById('e-' + k); if (e) e.clas
 function gv(id) { return document.getElementById(id)?.value?.trim() || ''; }
 
 function sendData() {
-  if (!SHEET_URL || SHEET_URL === 'YOUR_APPS_SCRIPT_URL') return;
+  if (!SHEET_URL || SHEET_URL === 'https://script.google.com/macros/s/AKfycbwB7bcq2onRpRFtXJ2rhDEjOS95hIbQDcYKbaTvCizHClqeJxWXW724Vtmwa7V8C6TK/exec') return;
   const ts = new Date().toLocaleString('vi-VN');
   let payload;
 
